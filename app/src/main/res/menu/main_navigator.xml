@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/navigation_lk"
+        android:id="@+id/bnv_firt"
         android:icon="@drawable/main_ic"
         android:title="FIRST" />
 
 
     <item
-        android:id="@+id/navigation_help"
+        android:id="@+id/bnv_sec"
         android:icon="@drawable/second_ic"
         android:title="SECOND" />
 </menu>

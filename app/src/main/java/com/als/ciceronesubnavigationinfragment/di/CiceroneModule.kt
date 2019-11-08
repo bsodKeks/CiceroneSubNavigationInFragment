@@ -21,14 +21,14 @@ class CiceroneModule {
 
     @Provides
     @Singleton
-    @Named(ScreensKeys.FIRST)
+    @Named(ScreensKeys.FIRST_ROOT)
     fun provideCiceroneFirst(): Cicerone<Router> {
         return Cicerone.create()
     }
 
     @Provides
     @Singleton
-    @Named(ScreensKeys.SECOND)
+    @Named(ScreensKeys.SECOND_ROOT)
     fun provideCiceroneSecond():  Cicerone<Router> {
         return Cicerone.create()
     }
