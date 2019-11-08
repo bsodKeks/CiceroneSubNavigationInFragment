@@ -4,6 +4,7 @@ import android.app.Application
 import com.als.ciceronesubnavigationinfragment.di.AppComponent
 import com.als.ciceronesubnavigationinfragment.di.CiceroneModule
 import com.als.ciceronesubnavigationinfragment.di.DaggerAppComponent
+import com.als.ciceronesubnavigationinfragment.di.HelperModule
 import ru.terrakok.cicerone.Cicerone
 import ru.terrakok.cicerone.Router
 
@@ -31,6 +32,7 @@ class App: Application() {
     fun initDagger() {
         appComponent = DaggerAppComponent.builder()
             .ciceroneModule(CiceroneModule())
+            .helperModule(HelperModule())
             .build()
         appComponent.inject(this)
     }

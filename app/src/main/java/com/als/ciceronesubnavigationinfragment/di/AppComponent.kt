@@ -16,13 +16,14 @@ import javax.inject.Singleton
 
 
 @Singleton
-@Component(modules = arrayOf(CiceroneModule::class)
+@Component(modules = arrayOf(CiceroneModule::class, HelperModule::class)
 )
 interface AppComponent {
     @Component.Builder
     interface Builder {
         fun build(): AppComponent
         fun ciceroneModule(ciceroneModule: CiceroneModule): Builder
+        fun helperModule(helperModule: HelperModule): Builder
     }
 
     fun inject(app: App)
