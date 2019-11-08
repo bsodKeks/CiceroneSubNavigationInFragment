@@ -4,6 +4,13 @@ import com.als.ciceronesubnavigationinfragment.App
 import com.als.ciceronesubnavigationinfragment.ui.MainActivity
 import com.als.ciceronesubnavigationinfragment.ui.SplashFragment
 import com.als.ciceronesubnavigationinfragment.ui.main.MainFlowFragment
+import com.als.ciceronesubnavigationinfragment.ui.main.first.FirstBlueFragment
+import com.als.ciceronesubnavigationinfragment.ui.main.first.FirstRedFragment
+import com.als.ciceronesubnavigationinfragment.ui.main.first.FirstRootFragment
+import com.als.ciceronesubnavigationinfragment.ui.main.first.FirstWhiteFragment
+import com.als.ciceronesubnavigationinfragment.ui.main.second.SecondBlackFragment
+import com.als.ciceronesubnavigationinfragment.ui.main.second.SecondRedFragment
+import com.als.ciceronesubnavigationinfragment.ui.main.second.SecondRootFragment
 import dagger.Component
 import javax.inject.Singleton
 
@@ -22,4 +29,11 @@ interface AppComponent {
     fun inject(app: MainActivity)
     fun inject(splashFragment: SplashFragment)
     fun inject(mainFlowFragment: MainFlowFragment)
+    fun inject(firstRedFragment: FirstRedFragment)
+    fun inject(firstBlueFragment: FirstBlueFragment)
+    fun inject(firstRootFragment: FirstRootFragment)
+    fun inject(firstWhiteFragment: FirstWhiteFragment)
+    fun inject(secondRootFragment: SecondRootFragment)
+    fun inject(secondRedFragment: SecondRedFragment)
+    fun inject(secondBlackFragment: SecondBlackFragment)
 }
