@@ -43,4 +43,5 @@ dependencies {
 
     //Cicerone
     implementation "ru.terrakok.cicerone:cicerone:$cicerone_version"
+    implementation 'com.google.android.material:material:1.0.0'
 }

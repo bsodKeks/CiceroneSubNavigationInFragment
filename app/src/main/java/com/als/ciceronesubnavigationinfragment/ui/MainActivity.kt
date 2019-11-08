@@ -6,11 +6,13 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.als.ciceronesubnavigationinfragment.App
 import com.als.ciceronesubnavigationinfragment.R
+import com.als.ciceronesubnavigationinfragment.helpers.navigation.Screens
 import ru.terrakok.cicerone.Navigator
 import ru.terrakok.cicerone.Router
 import ru.terrakok.cicerone.android.support.SupportAppNavigator
 import ru.terrakok.cicerone.commands.Back
 import ru.terrakok.cicerone.commands.Command
+import ru.terrakok.cicerone.commands.Replace
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
@@ -44,5 +46,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         App.appComponent.inject(this)
+        if (savedInstanceState == null)
+            navigator.applyCommands(arrayOf<Command>(Replace(Screens.SplashScreen())))
     }
 }

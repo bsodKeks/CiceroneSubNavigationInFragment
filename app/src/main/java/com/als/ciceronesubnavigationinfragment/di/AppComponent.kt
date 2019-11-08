@@ -2,6 +2,7 @@ package com.als.ciceronesubnavigationinfragment.di
 
 import com.als.ciceronesubnavigationinfragment.App
 import com.als.ciceronesubnavigationinfragment.ui.MainActivity
+import com.als.ciceronesubnavigationinfragment.ui.SplashFragment
 import dagger.Component
 import javax.inject.Singleton
 
@@ -18,4 +19,5 @@ interface AppComponent {
 
     fun inject(app: App)
     fun inject(app: MainActivity)
+    fun inject(splashFragment: SplashFragment)
 }

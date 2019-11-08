@@ -1,4 +1,6 @@
 package com.als.ciceronesubnavigationinfragment.ui.main
 
-class MainFrowFragment {
+import androidx.fragment.app.Fragment
+
+class MainFrowFragment: Fragment() {
 }
