@@ -3,7 +3,7 @@ package com.als.ciceronesubnavigationinfragment.helpers.navigation
 import androidx.fragment.app.Fragment
 import com.als.ciceronesubnavigationinfragment.helpers.ScreensKeys
 import com.als.ciceronesubnavigationinfragment.ui.SplashFragment
-import com.als.ciceronesubnavigationinfragment.ui.main.MainFrowFragment
+import com.als.ciceronesubnavigationinfragment.ui.main.MainFlowFragment
 import ru.terrakok.cicerone.android.support.SupportAppScreen
 
 class Screens{
@@ -14,10 +14,10 @@ class Screens{
         }
     }
 
-    class MainCreen() : SupportAppScreen(){
+    class MainFlowScreen() : SupportAppScreen(){
         override fun getFragment(): Fragment {
             this.screenKey = ScreensKeys.MAIN_FLOW
-            return MainFrowFragment()
+            return MainFlowFragment()
         }
     }
 }

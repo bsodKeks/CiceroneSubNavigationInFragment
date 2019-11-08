@@ -49,4 +49,14 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null)
             navigator.applyCommands(arrayOf<Command>(Replace(Screens.SplashScreen())))
     }
+
+    override fun onResume() {
+        super.onResume()
+        App.cicerone.navigatorHolder.setNavigator(navigator)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        App.cicerone.navigatorHolder.removeNavigator()
+    }
 }

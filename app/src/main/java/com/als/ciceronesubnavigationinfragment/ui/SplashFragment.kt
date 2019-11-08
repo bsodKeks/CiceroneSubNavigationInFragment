@@ -20,13 +20,14 @@ class SplashFragment: Fragment() {
         val view = inflater!!.inflate(R.layout.fragment_splash, container, false)
         App.appComponent.inject(this)
         if (savedInstanceState == null) {
+            showMain()
         }
         return view
     }
 
     private fun showMain(){
         Handler().postDelayed(Runnable {
-            router.newRootScreen(Screens.MainCreen())
+            router.newRootScreen(Screens.MainFlowScreen())
         }, 3 * 1000)
 
     }
