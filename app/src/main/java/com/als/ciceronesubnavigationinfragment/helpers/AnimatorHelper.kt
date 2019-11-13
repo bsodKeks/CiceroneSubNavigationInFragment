@@ -2,12 +2,14 @@ package com.als.ciceronesubnavigationinfragment.helpers
 
 import androidx.fragment.app.FragmentTransaction
 import com.als.ciceronesubnavigationinfragment.R
-
+/**
+ * Helper возвращающий fragmentTransaction с установленными кастомными анимациями(RU)
+ * Helper returning fragmentTransaction installed custom animations(EN)
+ *
+ * @author ALS
+ */
 class AnimatorHelper {
-    /**
-     * анимация слева направо
-     */
-    fun fromLeft(fragmentTransaction: FragmentTransaction) : FragmentTransaction {
+    fun fromRight(fragmentTransaction: FragmentTransaction) : FragmentTransaction {
         fragmentTransaction!!
             .setCustomAnimations(
                 R.animator.slide_in_right,
@@ -17,10 +19,7 @@ class AnimatorHelper {
         return fragmentTransaction
     }
 
-    /**
-     * анимация справа налево
-     */
-    fun fromRight(fragmentTransaction: FragmentTransaction) : FragmentTransaction {
+    fun fromLeft(fragmentTransaction: FragmentTransaction) : FragmentTransaction {
         fragmentTransaction
             .setCustomAnimations(
                 R.animator.slide_in_left,
@@ -30,10 +29,7 @@ class AnimatorHelper {
         return fragmentTransaction
     }
 
-    /**
-     * анимация сверху вниз
-     */
-    fun fromTop(fragmentTransaction: FragmentTransaction) : FragmentTransaction {
+    fun fromBottom(fragmentTransaction: FragmentTransaction) : FragmentTransaction {
         fragmentTransaction
             .setCustomAnimations(
                 R.animator.slide_in_bottom,
@@ -43,10 +39,8 @@ class AnimatorHelper {
         return fragmentTransaction
     }
 
-    /**
-     * анимация снизу вверх
-     */
-    fun fromBottom(fragmentTransaction: FragmentTransaction) : FragmentTransaction {
+
+    fun fromTop(fragmentTransaction: FragmentTransaction) : FragmentTransaction {
         fragmentTransaction
             .setCustomAnimations(
                 R.animator.slide_in_top,
@@ -56,9 +50,6 @@ class AnimatorHelper {
         return fragmentTransaction
     }
 
-    /**
-     * Экспериментальная анимация
-     */
     fun experiment(fragmentTransaction: FragmentTransaction) : FragmentTransaction {
         fragmentTransaction
             .setCustomAnimations(

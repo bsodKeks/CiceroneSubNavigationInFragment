@@ -14,7 +14,12 @@ import com.als.ciceronesubnavigationinfragment.ui.main.second.SecondRootFragment
 import dagger.Component
 import javax.inject.Singleton
 
-
+/**
+ * Главный Dagger компонент(RU)
+ * Main Dagger component(EN)
+ *
+ * @author ALS
+ */
 @Singleton
 @Component(modules = arrayOf(CiceroneModule::class, HelperModule::class)
 )

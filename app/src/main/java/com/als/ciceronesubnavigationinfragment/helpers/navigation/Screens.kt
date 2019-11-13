@@ -13,64 +13,77 @@ import com.als.ciceronesubnavigationinfragment.ui.main.second.SecondRedFragment
 import com.als.ciceronesubnavigationinfragment.ui.main.second.SecondRootFragment
 import ru.terrakok.cicerone.android.support.SupportAppScreen
 
-class Screens{
-    class SplashScreen() : SupportAppScreen(){
+/**
+ * Описание всех экранов приложения(RU)
+ * Description all application screens(EN)
+ *
+ * @author ALS
+ */
+class Screens {
+    /**
+     * SplashFragment screen
+     */
+    class SplashScreen() : SupportAppScreen() {
         override fun getFragment(): Fragment {
             this.screenKey = ScreensKeys.SPLASH
             return SplashFragment()
         }
     }
 
-    class MainFlowScreen() : SupportAppScreen(){
+    /**
+     * MainFlowFragment screen
+     */
+    class MainFlowScreen() : SupportAppScreen() {
         override fun getFragment(): Fragment {
             this.screenKey = ScreensKeys.MAIN_FLOW
             return MainFlowFragment()
         }
     }
 
-    class FirstRootScreen() : SupportAppScreen(){
-        override fun getFragment(): Fragment {
-            this.screenKey = ScreensKeys.FIRST_ROOT
-            return FirstRootFragment()
-        }
-    }
-
-    class SecondRootScreen() : SupportAppScreen(){
-        override fun getFragment(): Fragment {
-            this.screenKey = ScreensKeys.SECOND_ROOT
-            return SecondRootFragment()
-        }
-    }
-
-    class FirstRedScreen() : SupportAppScreen(){
+    /**
+     * FirstRedFragment screen
+     */
+    class FirstRedScreen() : SupportAppScreen() {
         override fun getFragment(): Fragment {
             this.screenKey = ScreensKeys.FIRST_RED
             return FirstRedFragment()
         }
     }
 
-    class FirstBlueScreen() : SupportAppScreen(){
+    /**
+     * FirstBlueFragment screen
+     */
+    class FirstBlueScreen() : SupportAppScreen() {
         override fun getFragment(): Fragment {
             this.screenKey = ScreensKeys.FIRST_BLUE
             return FirstBlueFragment()
         }
     }
 
-    class FirstWhiteScreen() : SupportAppScreen(){
+    /**
+     * FirstWhiteFragment screen
+     */
+    class FirstWhiteScreen() : SupportAppScreen() {
         override fun getFragment(): Fragment {
             this.screenKey = ScreensKeys.FIRST_WHITE
             return FirstWhiteFragment()
         }
     }
 
-    class SecondRedScreen() : SupportAppScreen(){
+    /**
+     * SecondRedFragment screen
+     */
+    class SecondRedScreen() : SupportAppScreen() {
         override fun getFragment(): Fragment {
             this.screenKey = ScreensKeys.SECOND_RED
             return SecondRedFragment()
         }
     }
 
-    class SecondBlackScreen() : SupportAppScreen(){
+    /**
+     * SecondBlackFragment screen
+     */
+    class SecondBlackScreen() : SupportAppScreen() {
         override fun getFragment(): Fragment {
             this.screenKey = ScreensKeys.SECOND_RED
             return SecondBlackFragment()

@@ -1,6 +1,5 @@
 package com.als.ciceronesubnavigationinfragment.ui.main.first
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,8 +12,6 @@ import com.als.ciceronesubnavigationinfragment.helpers.AnimatorHelper
 import com.als.ciceronesubnavigationinfragment.helpers.ScreensKeys
 import com.als.ciceronesubnavigationinfragment.helpers.navigation.Screens
 import com.als.ciceronesubnavigationinfragment.ui.Base.TabFragment
-import com.als.ciceronesubnavigationinfragment.ui.SplashFragment
-import com.als.ciceronesubnavigationinfragment.ui.main.MainFlowFragment
 import ru.terrakok.cicerone.Cicerone
 import ru.terrakok.cicerone.Router
 import ru.terrakok.cicerone.android.support.SupportAppNavigator
@@ -22,7 +19,12 @@ import ru.terrakok.cicerone.commands.Back
 import ru.terrakok.cicerone.commands.Command
 import javax.inject.Inject
 import javax.inject.Named
-
+/**
+ * первый корневой фрагмент, нужен для хранения цепочки экранов первой вкладки(RU)
+ * first root fragment, needs for store screen chain of a first tab(EN)
+ *
+ * @author ALS
+ */
 class FirstRootFragment: TabFragment(ScreensKeys.FIRST_ROOT) {
     @field:[Inject Named(ScreensKeys.FIRST_ROOT)]
     lateinit var cicerone: Cicerone<Router>

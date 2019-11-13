@@ -9,9 +9,10 @@ import ru.terrakok.cicerone.Cicerone
 import ru.terrakok.cicerone.Router
 
 /**
- * Класс приложения
+ * Класс приложения(RU)
+ * Application class(EN)
  *
- * @author ALS
+ * @author ALS(https://github.com/bsodKeks)
  */
 
 class App: Application() {

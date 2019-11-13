@@ -6,7 +6,12 @@ import com.als.ciceronesubnavigationinfragment.ui.Base.TabFragment
 import ru.terrakok.cicerone.Navigator
 import ru.terrakok.cicerone.commands.Back
 import ru.terrakok.cicerone.commands.Command
-
+/**
+ * Кастомный навигатор Cicerone, для переключения фрагментов BottomNavigationView(RU)
+ * Custom Cicerone navigator, for switch fragments BottomNavigationView(EN)
+ *
+ * @author ALS
+ */
 class SwitchNavigator(
     private val activity: FragmentActivity,
     private val fragmentManager: FragmentManager,

@@ -1,5 +1,11 @@
 package com.als.ciceronesubnavigationinfragment.helpers
 
+/**
+ * Ключи всех экранов приложения(RU)
+ * Keys of all application screens(EN)
+ *
+ * @author ALS
+ */
 class ScreensKeys {
     companion object {
         const val SPLASH = "SPLASH"
