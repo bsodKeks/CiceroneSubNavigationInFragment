@@ -1,5 +1,5 @@
 # CiceroneSubNavigationInFragment
-Simple Project to use multinavigation into fragment in SingleActivity project via Cicerone(https://github.com/terrakok/Cicerone)
+Simple Project to use multinavigation into fragment in SingleActivity project via Cicerone(https://github.com/terrakok/Cicerone), and use animations on changes fragment
 
 Uses technologies
  - dagger2
