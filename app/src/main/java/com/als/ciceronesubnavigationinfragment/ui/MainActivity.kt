@@ -18,6 +18,12 @@ import ru.terrakok.cicerone.commands.Command
 import ru.terrakok.cicerone.commands.Replace
 import javax.inject.Inject
 
+/**
+ * Главная активити приложения(RU)
+ * Main activity application(EN)
+ *
+ * @author ALS
+ */
 class MainActivity : AppCompatActivity() {
 
     @Inject
@@ -69,6 +75,11 @@ class MainActivity : AppCompatActivity() {
         App.cicerone.navigatorHolder.removeNavigator()
     }
 
+    /**
+     * Переопределяем метод, для перехвата нажатия на backButton(RU)
+     * override method for interception backButton press(EN)
+     *
+     */
     override fun onBackPressed() {
         supportFragmentManager.fragments.filter{ it.isVisible }.forEach {
             //Смотрим, если в текущем фрагменте переопределен BackButtonListener, то выполняем его

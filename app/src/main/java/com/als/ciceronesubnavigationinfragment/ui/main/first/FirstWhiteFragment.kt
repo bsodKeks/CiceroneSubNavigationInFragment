@@ -16,6 +16,12 @@ import ru.terrakok.cicerone.Router
 import javax.inject.Inject
 import javax.inject.Named
 
+/**
+ * Простой фрагмент из первой цепочки экранов(RU)
+ * simple fragment from first screen chain(EN)
+ *
+ * @author ALS
+ */
 class FirstWhiteFragment: Fragment(), BackButtonListener {
     @field:[Inject Named(ScreensKeys.FIRST_ROOT)]
     lateinit var cicerone: Cicerone<Router>
@@ -27,7 +33,10 @@ class FirstWhiteFragment: Fragment(), BackButtonListener {
 
         return view
     }
-
+    /**
+     * по нажатию на кнопку переходим на первый экран цепочки(RU)
+     * on button press go to first chain screen(EN)
+     */
     private fun initView(view: View){
         view.buttonNext.setOnClickListener(View.OnClickListener {
             cicerone.router.backTo(Screens.FirstRedScreen())

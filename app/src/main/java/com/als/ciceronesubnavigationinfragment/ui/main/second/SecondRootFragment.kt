@@ -24,6 +24,12 @@ import ru.terrakok.cicerone.commands.Command
 import javax.inject.Inject
 import javax.inject.Named
 
+/**
+ * первый корневой фрагмент, нужен для хранения цепочки экранов второй вкладки(RU)
+ * first root fragment, needs for store screen chain of a second tab(EN)
+ *
+ * @author ALS
+ */
 class SecondRootFragment: TabFragment(ScreensKeys.SECOND_ROOT) {
     @field:[Inject Named(ScreensKeys.SECOND_ROOT)]
     lateinit var cicerone: Cicerone<Router>
@@ -36,6 +42,11 @@ class SecondRootFragment: TabFragment(ScreensKeys.SECOND_ROOT) {
         val root = inflater.inflate(R.layout.fragment_container, container, false)
         App.appComponent.inject(this)
         navigator = object : SupportAppNavigator(activity, childFragmentManager, R.id.container_root){
+            /**
+             * Переопределяем FragmentTransaction для установки кастомной анимации смены экранов(RU)
+             * override FragmentTransaction for setup custom animation on screen change(EN)
+             *
+             */
             override fun setupFragmentTransaction(
                 command: Command?,
                 currentFragment: Fragment?,

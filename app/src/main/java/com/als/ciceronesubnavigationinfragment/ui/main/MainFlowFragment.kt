@@ -16,6 +16,12 @@ import kotlinx.android.synthetic.main.fragment_main_flow.view.*
 import ru.terrakok.cicerone.Cicerone
 import javax.inject.Inject
 
+/**
+ * главный фрагмент приложения с bottomNavigationView(RU)
+ * main application fragment with bottomNavigationView(EN)
+ *
+ * @author ALS
+ */
 class MainFlowFragment: Fragment() {
     private val firstRootFragment: FirstRootFragment by lazy{
         childFragmentManager!!.findFragmentByTag(ScreensKeys.FIRST_ROOT) as? FirstRootFragment ?: FirstRootFragment()

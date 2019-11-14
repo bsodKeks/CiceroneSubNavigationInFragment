@@ -16,6 +16,12 @@ import ru.terrakok.cicerone.Router
 import javax.inject.Inject
 import javax.inject.Named
 
+/**
+ * Простой фрагмент из второй цепочки экранов(RU)
+ * simple fragment from second screen chain(EN)
+ *
+ * @author ALS
+ */
 class SecondBlackFragment: Fragment(), BackButtonListener {
     @field:[Inject Named(ScreensKeys.SECOND_ROOT)]
     lateinit var cicerone: Cicerone<Router>

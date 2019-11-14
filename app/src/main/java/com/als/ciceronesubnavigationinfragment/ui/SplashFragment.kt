@@ -12,6 +12,12 @@ import com.als.ciceronesubnavigationinfragment.helpers.navigation.Screens
 import ru.terrakok.cicerone.Router
 import javax.inject.Inject
 
+/**
+ * Splash фрагмент(RU)
+ * Splash fragment(EN)
+ *
+ * @author ALS
+ */
 class SplashFragment: Fragment() {
     @Inject
     lateinit var router: Router
